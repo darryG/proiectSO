@@ -7,7 +7,7 @@ check_file() {
 
     #Verificam daca fisierul are mai putin de 3 linii
     nr_linii=$(wc -l < "$file")
-    if [ "$num_lines" -lt 3 ]; then
+    if [ "$num_linii" -lt 3 ]; then
         #Verificam numarul de cuvinte si caractere
         num_cuv=$(wc -w < "$file")
         num_car=$(wc -m < "$file")
