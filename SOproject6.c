@@ -82,11 +82,7 @@ void updateSnapshotAndCheckPermissions(const char *dirPath, const char *isolated
                 //Fisierul este suspect, trebuie mutat in directorul izolat
                 printf("Fisierul suspect \"%s\" va fi mutat in directorul izolat.\n", fullPath);
                 (*corruptedFilesCount)++;
-                //Implementeaza mutarea fisierului in directorul izolat
-                //Comentat pentru a evita efectuarea efectiva a mutarii
-                //Implementarea depinde de cerintele specifice si de sistemul de operare
             }
-
             //Actualizam snapshot-ul doar daca fisierul este considerat sigur
             if (strcmp(result, "SAFE") == 0) {
                 // Obtinem metadatele fisierului/directorului
